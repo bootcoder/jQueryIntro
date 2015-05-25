@@ -2,6 +2,14 @@ body {
   background-color: purple;
 }
 
+nav {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
 .klass {
   background-color: red;
 }
@@ -12,4 +20,8 @@ body {
 
 h1 {
   color: blue;
+}
+
+.list_container {
+  background-color: gray;
 }

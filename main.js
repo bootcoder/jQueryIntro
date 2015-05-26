@@ -129,7 +129,15 @@ var manipulateDivs = function () {
 
 };
 
+var picListener = function () {
+  $('img').on('click', function(){
+    blowUp(this);
+  });
+}
 
+var blowUp = function (selector) {
+  $(selector).toggle('explode', {pieces: 16}, 2000);
+}
 
 $(document).ready(function () {
 
@@ -141,6 +149,6 @@ $(document).ready(function () {
   // nthChild();
   // conditionalNote();
   // chainingCalls();
-  // picListener();
+  picListener();
 
 });

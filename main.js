@@ -1,6 +1,24 @@
 // jQuery is a Javascript Library build to make traversing and manipulating DOM elements a breeze.
 
 
+var selctionExample = function () {
+  // jQuery === $
+  // $ Use standard CSS selectors, ex: .klass && #eyed && <h1>
+  // $('.klass');
+
+  // console.log($('.klass'));
+  // console.log($('#eyed'));
+  // console.log($('h1'));
+
+  // $ Can be set to a variable
+
+  var domKlass = $('.klass');
+  console.log(domKlass);
+
+  // explain about nodelist vs array
+
+};
+
 var chainingCalls = function () {
   // $ Calls can be chained together to get where you're going.
 
@@ -19,7 +37,8 @@ var chainingCalls = function () {
   // var jBody = $( 'body' ).children();
 
   console.log('***********');
-  console.log(jBody);
+  console.log($('nav'));
+  // console.log(jBody);
   console.log('***********');
 
 
@@ -30,22 +49,6 @@ var chainingCalls = function () {
   // Traversing up the tree in the same manner.
   var parentDiv = $('ul').parents('div');
   parentDiv.addClass('list_container');
-
-};
-
-var selctionExample = function () {
-  // jQuery === $
-  // $ Use standard CSS selectors, ex: .klass && #eyed && <h1>
-  // $('.klass');
-
-  console.log($('.klass')[0]);
-  console.log($('#eyed'));
-  console.log($('h1'));
-
-  // $ Can be set to a variable
-
-  var domKlass = $('.klass');
-  console.log(domKlass);
 
 };
 
@@ -67,14 +70,29 @@ var addListItems = function () {
 };
 
 
+var changeList = function () {
+  var items = $('li');
+  console.log(items);
+  items.replaceWith('<li> List Item </li>');
+};
+
+
 var addNums = function () {
   // Work with data from each element in a collection.
   var i = 0;
   for (i = 0; i < $('.awesome_list').children().length; i += 1) {
     var item = $('.awesome_list').children()[i];
-    item.innerHTML = "Item " + (i + 1) + ":";
+    var text = item.innerHTML
+    item.innerHTML = text + (i + 1) + ":";
     // debugger
-  }
+  };
+};
+
+var nthChild = function () {
+  var list = $('.awesome_list');
+  var list_item = list.find(':nth-child(4)');
+  // Important to note here that nth-child is a 1 base index.
+  console.log(list_item);
 };
 
 
@@ -85,15 +103,14 @@ var conditionalNote = function () {
   if ($('#nonexistent')) {
     // No Bueno, This code will always run.
     console.log("This shouldn't be here...");
-
-  }
+  };
 
   if ($('#existent').length > 0) {
     // This code will only run if the thing actually exists.
     console.log("I found the one to rule them all!");
   } else {
     console.log("ERRRRROR:");
-  }
+  };
 };
 
 var manipulateDivs = function () {
@@ -112,12 +129,18 @@ var manipulateDivs = function () {
 
 };
 
+
+
 $(document).ready(function () {
 
-  manipulateDivs();
-  addListItems();
-  addNums();
-  conditionalNote();
-  chainingCalls();
+  selctionExample();
+  // manipulateDivs();
+  // addListItems();
+  // changeList();
+  // addNums();
+  // nthChild();
+  // conditionalNote();
+  // chainingCalls();
+  // picListener();
 
 });

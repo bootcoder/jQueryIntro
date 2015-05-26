@@ -58,6 +58,25 @@ var chainingCalls = function () {
 };
 
 
+var manipulateDivs = function () {
+
+  // As a student, good to signal when you hit a function
+  console.log("Hit: Document Ready");
+
+  // Assign a selection to manipulate later.
+  var h1 = $('h1');
+  h1.css('font-size', '2.5em');
+
+  // Or manipulate selections straight up.
+  $('h1').css('color', 'white');
+  $('.klass').css('background-color', 'green');
+  $('#eyed').css('background-color', 'brown');
+  $('#eyed').after($('<h3>').text('Insert sibling directly under #eyed'));
+  $('#eyed').before($('<h3>').text('Insert sibling directly before #eyed'));
+
+};
+
+
 var iterationAndConditionals = function () {
 
   // Iterate over collections
@@ -89,21 +108,7 @@ var iterationAndConditionals = function () {
 
 
 
-var manipulateDivs = function () {
 
-  // As a student, good to signal when you hit a function
-  console.log("Hit: Document Ready");
-
-  // Assign a selection to manipulate later.
-  var h1 = $('h1');
-  h1.css('font-size', '2.5em');
-
-  // Or manipulate selections straight up.
-  $('h1').css('color', 'white');
-  $('.klass').css('background-color', 'green');
-  $('#eyed').css('background-color', 'brown');
-
-};
 
 
 $(document).ready(function () {
@@ -118,5 +123,6 @@ $(document).ready(function () {
   iterationAndConditionals();
   chainingCalls();
   picListener();
+  buttonListener();
 
 });

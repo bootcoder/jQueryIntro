@@ -34,7 +34,9 @@ h1 {
   max-width: 100%;
 }
 
- img {
+ .gallery {
+  width: 150px;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
   }

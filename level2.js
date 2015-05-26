@@ -1,4 +1,8 @@
 
+var toggleDiv = function (selector) {
+  $(selector).fadeToggle();
+}
+
 // blowUp Requires jQuery UI
 var blowUp = function (selector) {
   $(selector).toggle('explode', {pieces: 16}, 2000, function () {
@@ -9,7 +13,6 @@ var blowUp = function (selector) {
 var reduceElement = function (selector) {
   $(selector).animate({
     opacity: '1',
-    height: '150px',
     width: '150px'
   }, 'slow');
 };
@@ -17,8 +20,7 @@ var reduceElement = function (selector) {
 var expandElement = function (selector) {
   $(selector).animate({
     opacity: '0.5',
-    height: '250px',
-    width: '250px'
+    width: '500px'
   }, 'fast');
 };
 
@@ -53,3 +55,13 @@ var picListener = function () {
     }
   });
 };
+
+var buttonListener = function () {
+  $('#super_button').on('click', function (event) {
+    event.preventDefault();
+    console.log('click')
+    toggleDiv('.img_container');
+  })
+}
+
+

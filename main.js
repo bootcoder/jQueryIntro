@@ -1,9 +1,10 @@
-// jQuery is a Javascript Library build to make traversing and manipulating DOM elements a breeze.
+// jQuery is a JavaScript Library build to make traversing and manipulating DOM elements a breeze.
 
 
 var selctionExample = function () {
+
   // jQuery === $
-  // $ Use standard CSS selectors, ex: .klass && #eyed && <h1>
+  // $ $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
   // $('.klass');
 
   // console.log($('.klass'));
@@ -15,7 +16,12 @@ var selctionExample = function () {
   var domKlass = $('.klass');
   console.log(domKlass);
 
-  // explain about nodelist vs array
+  //////////////////
+  // Important note
+  //////////////////
+  // Consoling domKlass yields what appears to be an array of elements.
+  // This is not an array it is a NodeList.
+  // NodeLists do not have the same functionality as Arrays.
 
 };
 
@@ -37,8 +43,7 @@ var chainingCalls = function () {
   // var jBody = $( 'body' ).children();
 
   console.log('***********');
-  console.log($('nav'));
-  // console.log(jBody);
+  console.log(jBody);
   console.log('***********');
 
 
@@ -53,65 +58,36 @@ var chainingCalls = function () {
 };
 
 
-var addListItems = function () {
-  // Traversal
-  // $ is a great way to traverse the DOM
+var iterationAndConditionals = function () {
 
-  // Look down to sub-elements
-  var list = $('.awesome_list');
+  // Iterate over collections
+  $('div').each(function(event){
+    console.log(event);
+    console.log(this);
+    $(this).addClass('moreKlass');
+  })
 
-  var listItems = $('.awesome_list').children();
-  // debugger
-  // Append or remove elements
-  var i = 0;
-  for (i = 0; i < 5; i += 1) {
-    list.append(listItems.clone());
+  // A note about iterationAndConditionals:
+
+  if ($('#nonexistent')) {
+    // No Bueno, This code will always run.
+    // jQuery always returns an object, no matter whether the selector matched or not.
+    console.log("This shouldn't be here...");
+  }
+
+  // Test objects with the following:
+  // Both if statements below function the same.
+  // if ($('#existent').length) {
+  if ($('#existent').length > 0) {
+    // This code will only run if the thing actually exists.
+    console.log("Object found in DOM");
+  } else {
+    console.log("ERRRRROR:");
   }
 };
 
 
-var changeList = function () {
-  var items = $('li');
-  console.log(items);
-  items.replaceWith('<li> List Item </li>');
-};
 
-
-var addNums = function () {
-  // Work with data from each element in a collection.
-  var i = 0;
-  for (i = 0; i < $('.awesome_list').children().length; i += 1) {
-    var item = $('.awesome_list').children()[i];
-    var text = item.innerHTML
-    item.innerHTML = text + (i + 1) + ":";
-    // debugger
-  };
-};
-
-var nthChild = function () {
-  var list = $('.awesome_list');
-  var list_item = list.find(':nth-child(4)');
-  // Important to note here that nth-child is a 1 base index.
-  console.log(list_item);
-};
-
-
-var conditionalNote = function () {
-
-  // A note about conditionals:
-
-  if ($('#nonexistent')) {
-    // No Bueno, This code will always run.
-    console.log("This shouldn't be here...");
-  };
-
-  if ($('#existent').length > 0) {
-    // This code will only run if the thing actually exists.
-    console.log("I found the one to rule them all!");
-  } else {
-    console.log("ERRRRROR:");
-  };
-};
 
 var manipulateDivs = function () {
 
@@ -129,26 +105,18 @@ var manipulateDivs = function () {
 
 };
 
-var picListener = function () {
-  $('img').on('click', function(){
-    blowUp(this);
-  });
-}
-
-var blowUp = function (selector) {
-  $(selector).toggle('explode', {pieces: 16}, 2000);
-}
 
 $(document).ready(function () {
 
   selctionExample();
-  // manipulateDivs();
-  // addListItems();
-  // changeList();
-  // addNums();
-  // nthChild();
-  // conditionalNote();
-  // chainingCalls();
+  manipulateDivs();
+  listListener();
+  addListItems();
+  changeList();
+  addNums();
+  nthChild();
+  iterationAndConditionals();
+  chainingCalls();
   picListener();
 
 });

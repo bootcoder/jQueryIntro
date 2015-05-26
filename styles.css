@@ -1,3 +1,7 @@
+* {
+  border: 1px solid blue;
+}
+
 body {
   background-color: purple;
 }
@@ -25,3 +29,12 @@ h1 {
 .list_container {
   background-color: gray;
 }
+
+.img_container {
+  max-width: 100%;
+}
+
+ img {
+  margin-right: auto;
+  margin-left: auto;
+  }

@@ -114,15 +114,21 @@ var iterationAndConditionals = function () {
 $(document).ready(function () {
 
   selctionExample();
-  manipulateDivs();
-  listListener();
-  addListItems();
-  changeList();
-  addNums();
-  nthChild();
-  iterationAndConditionals();
-  chainingCalls();
-  picListener();
-  buttonListener();
+  // chainingCalls();
+  // manipulateDivs();
+  // iterationAndConditionals();
+
+  // listListener();
+  // addListItems();
+  // changeList();
+  // addNums();
+  // nthChild();
+
+  // picListener();
+  // buttonListener();
 
 });
+
+
+// Quick look at Twenty Great jQuery methods
+// http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521

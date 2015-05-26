@@ -7,7 +7,7 @@ var toggleDiv = function (selector) {
 var blowUp = function (selector) {
   $(selector).toggle('explode', {pieces: 16}, 2000, function () {
     $(selector).toggle('explode', {peices: 9}, 1000);
-  });
+  })
 };
 
 var reduceElement = function (selector) {
@@ -62,6 +62,6 @@ var buttonListener = function () {
     console.log('click')
     toggleDiv('.img_container');
   })
-}
+};
 
 

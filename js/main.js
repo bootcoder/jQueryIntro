@@ -1,10 +1,10 @@
 // jQuery is a JavaScript Library build to make traversing and manipulating DOM elements a breeze.
 
-
-var selctionExample = function () {
+var selectionExample = function () {
 
   // jQuery === $
-  // $ $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
+  // $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
+  // http://www.w3schools.com/cssref/css_selectors.asp
   // $('.klass');
 
   // console.log($('.klass'));
@@ -32,18 +32,15 @@ var chainingCalls = function () {
   // **Too high and these document elements would not be available.**
 
 
-  // Chain method calls to traverse down the DOM elements tree.
-  // var jBody = $(document);
-  // var jBody = $(document.body);
-  // var jBody = $(document.body.children);
-  var jBody = $(document.body.children[0]);
+
+
 
   // **Same result with js loaded in head.**
 
-  // var jBody = $( 'body' ).children();
+  var jBody = $( 'body' ).children();
 
   console.log('***********');
-  console.log(jBody);
+  // console.log(jBody);
   console.log('***********');
 
 
@@ -80,24 +77,27 @@ var manipulateDivs = function () {
 var iterationAndConditionals = function () {
 
   // Iterate over collections
-  $('div').each(function(event){
-    console.log(event);
-    console.log(this);
-    $(this).addClass('moreKlass');
+  $('div').each(function(index, element){
+    // console.log(index);
+    console.log(arguments);
+    // console.log(this);
+    $(element).addClass('moreKlass');
   })
 
-  // A note about iterationAndConditionals:
+  // A note about conditionals:
 
   if ($('#nonexistent')) {
     // No Bueno, This code will always run.
+    // Want to know more baout Truthy VS Falsy in JS
+    // http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
     // jQuery always returns an object, no matter whether the selector matched or not.
     console.log("This shouldn't be here...");
   }
 
   // Test objects with the following:
   // Both if statements below function the same.
-  // if ($('#existent').length) {
-  if ($('#existent').length > 0) {
+  if ($('#existent').length) {
+  // if ($('#existent').length > 0) {
     // This code will only run if the thing actually exists.
     console.log("Object found in DOM");
   } else {
@@ -113,22 +113,34 @@ var iterationAndConditionals = function () {
 
 $(document).ready(function () {
 
-  selctionExample();
-  // chainingCalls();
-  // manipulateDivs();
-  // iterationAndConditionals();
+  // selectionExample();
+  chainingCalls();
+  manipulateDivs();
+  iterationAndConditionals();
 
-  // listListener();
-  // addListItems();
-  // changeList();
-  // addNums();
-  // nthChild();
+  listListener();
+  addListItems();
+  changeList();
+  addNums();
+  nthChild();
 
-  // picListener();
-  // buttonListener();
+  picListener();
+  buttonListener();
 
 });
 
 
+////////////
+// Links
+////////////
+
 // Quick look at Twenty Great jQuery methods
 // http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521
+
+// Style Guide
+// http://learn.jquery.com/style-guide/
+
+// Truthy VS: Falsey
+// http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
+
+

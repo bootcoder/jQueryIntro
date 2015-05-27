@@ -5,11 +5,10 @@ var addListItems = function () {
   // Look down to sub-elements
   var list = $('.awesome_list');
 
-  var listItems = $('.awesome_list').children();
+  var listItems = $('.awesome_list li:first-child');
   // debugger
   // Append or remove elements
-  var i = 0;
-  for (i = 0; i < 5; i += 1) {
+  for (var i = 0; i < 5; i += 1) {
     list.append(listItems.clone());
   }
 
@@ -19,14 +18,16 @@ var addListItems = function () {
 var changeList = function () {
   var items = $('li');
   console.log(items);
-  items.replaceWith('<li> List Item </li>');
+  items.html('List Item');
 };
 
 
 var addNums = function () {
   // Work with data from each element in a collection.
   var i = 0;
-  for (i = 0; i < $('.awesome_list').children().length; i += 1) {
+  var listLength = $('.awesome_list').children().length;
+
+  for (i = 0; i < listLength; i += 1) {
     var item = $('.awesome_list').children()[i];
     var text = item.innerHTML;
     item.innerHTML = text + (i + 1) + ":";

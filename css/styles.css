@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px solid blue;
-}
+}*/
 
 body {
   background-color: purple;
@@ -34,9 +34,30 @@ h1 {
   max-width: 100%;
 }
 
- .gallery {
-  width: 150px;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  }
+.img_container {
+  max-width: 10%;
+}
+
+.gallery {
+width: 150px;
+height: 150px;
+margin-right: auto;
+margin-left: auto;
+}
+
+/* Much more CSS than this tutorial needs.... Whatever Whatever, Don't judge me hippy!*/
+
+#super_button {
+  background-color:#ed8223;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:18px;
+  line-height:30px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border:0;
+  text-shadow:#C17C3A 0 -1px 0;
+  width:120px;
+  height:32px
+}

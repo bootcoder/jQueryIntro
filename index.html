@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>JqueryIntro</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="list.js"></script>
-  <script type="text/javascript" src="level2.js"></script>
+  <script type="text/javascript" src="js/list.js"></script>
+  <script type="text/javascript" src="js/level2.js"></script>
+
   <!-- I'm moving this to the final </body> position so it runs after the page is built. -->
   <!-- <script type="text/javascript" src="main.js"></script> -->
+
 </head>
 <body>
 
@@ -17,26 +22,38 @@
   <div id="eyed" class="klass">
     <h1>#eyed</h1>
   </div>
+
   <hr>
+
   <div class="klass">
     <h1>.klass</h1>
   </div>
-  <div id="existent"></div>
+
+  <div id="existent"><p>I am a thing</p></div>
+
   <hr>
-  <button id="super_button">Toggle Images</button>
-  <div class="img_container" style="display: none;">
-    <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=png">
-    <img class="gallery" src="https://secure.gravatar.com/avatar/c1b062e2a026b30c170980cd659e5a1a.png?r=PG&d=mm&s=150">
-    <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=gif">
-    <img class="gallery" src="https://secure.gravatar.com/avatar/d411441bc11ee0038195f72e821b8561.png?r=PG&d=mm&s=150">
-    <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=jpg">
+
+  <div>
+    <button id="super_button">Toggle Images</button>
+    <div class="img_container" style="display: none;">
+      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=png">
+      <img class="gallery" src="https://secure.gravatar.com/avatar/c1b062e2a026b30c170980cd659e5a1a.png?r=PG&d=mm&s=150">
+      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=gif">
+      <img class="gallery" src="https://secure.gravatar.com/avatar/d411441bc11ee0038195f72e821b8561.png?r=PG&d=mm&s=150">
+      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=jpg">
+    </div>
   </div>
+
   <hr>
+
   <div>
     <ul class="awesome_list">
       <li class="item">Item</li>
+      <li class="item">Item</li>
     </ul>
   </div>
-  <script type="text/javascript" src="main.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,12 +1,14 @@
 
 var toggleDiv = function (selector) {
-  $(selector).fadeToggle();
+  $(selector).slideToggle();
 }
 
 // blowUp Requires jQuery UI
 var blowUp = function (selector) {
   $(selector).toggle('explode', {pieces: 16}, 2000, function () {
-    $(selector).toggle('explode', {peices: 9}, 1000);
+    // Toggle like many jQuery functions accepts a callback...
+    // So I can un-toggle the thing once my toggling of the thing is complete
+    $(selector).toggle('explode', {pieces: 9}, 1000);
   })
 };
 
@@ -24,23 +26,16 @@ var expandElement = function (selector) {
   }, 'fast');
 };
 
-// listListener demonstrates event delegation for selecting
-// dynamically generated DOM elements. This function is called before other <li>
-// elements are appended to the DOM.
+$('body').on('click', '#new_button', function () {
 
-var listListener = function () {
-  $('ul').on({
-    mouseenter: function () {
-      $(this).css('background-color', 'red');
-    },
-    mouseleave: function () {
-      $(this).css('background-color', "gray");
-    }
-  }, 'li');
+})
+
+var buttonListener = function () {
+  $('#super_button').on('click', function (event) {
+    event.preventDefault();
+    toggleDiv('.img_container');
+  })
 };
-
-// Take note of the difference with picListener.
-// This event handler does not utilize event delegation.
 
 var picListener = function () {
   $('.gallery').on({
@@ -56,12 +51,17 @@ var picListener = function () {
   });
 };
 
-var buttonListener = function () {
-  $('#super_button').on('click', function (event) {
-    event.preventDefault();
-    console.log('click')
-    toggleDiv('.img_container');
-  })
+var listListener = function () {
+  $('ul').on({
+    mouseenter: function () {
+      $(this).css('background-color', 'red');
+    },
+    mouseleave: function () {
+      $(this).css('background-color', "gray");
+    }
+  }, 'li');
 };
+
+
 
 

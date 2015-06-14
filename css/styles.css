@@ -47,7 +47,7 @@ margin-left: auto;
 
 /* Much more CSS than this tutorial needs.... Whatever Whatever, Don't judge me hippy!*/
 
-#super_button {
+button {
   background-color:#ed8223;
   color:#fff;
   font-family:'Helvetica Neue',sans-serif;

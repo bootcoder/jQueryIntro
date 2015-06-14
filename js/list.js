@@ -41,3 +41,15 @@ var nthChild = function () {
   // Important to note here that nth-child is a 1 base index.
   console.log(list_item);
 };
+
+
+var listListener = function () {
+  $('ul').on({
+    mouseenter: function () {
+      $(this).css('background-color', 'red');
+    },
+    mouseleave: function () {
+      $(this).css('background-color', "gray");
+    }
+  }, 'li');
+};

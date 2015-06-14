@@ -3,6 +3,11 @@ var toggleDiv = function (selector) {
   $(selector).slideToggle();
 }
 
+var appendBtn = function () {
+  var btn = $('#super_button');
+  btn.parent().append('<button id="new_button">Kill All Humeows</button>')
+}
+
 // blowUp Requires jQuery UI
 var blowUp = function (selector) {
   $(selector).toggle('explode', {pieces: 16}, 2000, function () {
@@ -37,6 +42,7 @@ var buttonListener = function () {
   $('#super_button').on('click', function (event) {
     event.preventDefault();
     toggleDiv('.img_container');
+    appendBtn();
   })
 };
 
@@ -54,16 +60,6 @@ var picListener = function () {
   });
 };
 
-var listListener = function () {
-  $('ul').on({
-    mouseenter: function () {
-      $(this).css('background-color', 'red');
-    },
-    mouseleave: function () {
-      $(this).css('background-color', "gray");
-    }
-  }, 'li');
-};
 
 
 

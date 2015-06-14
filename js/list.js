@@ -15,7 +15,7 @@ var addListItems = function () {
 };
 
 
-var changeList = function () {
+var modListText = function () {
   var items = $('li');
   console.log(items);
   items.html('List Item');

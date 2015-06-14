@@ -1,7 +1,7 @@
 /** {
   border: 1px solid blue;
-}*/
-
+}
+*/
 body {
   background-color: purple;
 }
@@ -33,10 +33,10 @@ h1 {
 .img_container {
   max-width: 100%;
 }
-
+/*
 .img_container {
   max-width: 10%;
-}
+}*/
 
 .gallery {
 width: 150px;

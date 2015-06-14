@@ -1,6 +1,12 @@
 // jQuery is a JavaScript Library build to make traversing and manipulating DOM elements a breeze.
 
-var selectionExample = function () {
+// jQuery lets you move quickly from beginner to advanced
+
+// jQuery will increase your efficiency as a Developer
+
+//
+
+var basicSelection = function () {
 
   // jQuery === $
   // $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
@@ -24,6 +30,16 @@ var selectionExample = function () {
   // NodeLists do not have the same functionality as Arrays.
 
 };
+
+
+
+
+
+
+
+
+
+
 
 var chainingCalls = function () {
   // $ Calls can be chained together to get where you're going.
@@ -55,6 +71,16 @@ var chainingCalls = function () {
 };
 
 
+
+
+
+
+
+
+
+
+
+
 var manipulateDivs = function () {
 
   // As a student, good to signal when you hit a function
@@ -72,6 +98,16 @@ var manipulateDivs = function () {
   $('#eyed').before($('<h3>').text('Insert sibling directly before #eyed'));
 
 };
+
+
+
+
+
+
+
+
+
+
 
 
 var iterationAndConditionals = function () {
@@ -113,14 +149,14 @@ var iterationAndConditionals = function () {
 
 $(document).ready(function () {
 
-  // selectionExample();
+  basicSelection();
   chainingCalls();
   manipulateDivs();
   iterationAndConditionals();
 
   listListener();
   addListItems();
-  changeList();
+  modListText();
   addNums();
   nthChild();
 
@@ -130,9 +166,9 @@ $(document).ready(function () {
 });
 
 
-////////////
-// Links
-////////////
+////////////////
+// More Links //
+////////////////
 
 // Quick look at Twenty Great jQuery methods
 // http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521
@@ -143,4 +179,6 @@ $(document).ready(function () {
 // Truthy VS: Falsey
 // http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
 
+// jsfiddle - jquery show and tell with your friends
+// http://jsfiddle.net
 

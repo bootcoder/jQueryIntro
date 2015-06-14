@@ -15,14 +15,17 @@ var blowUp = function (selector) {
 var reduceElement = function (selector) {
   $(selector).animate({
     opacity: '1',
-    width: '150px'
+    width: '150px',
+    height: '150px'
   }, 'slow');
 };
 
 var expandElement = function (selector) {
+  var rando = Math.floor((Math.random() * 500) + 100);
   $(selector).animate({
-    opacity: '0.5',
-    width: '500px'
+    opacity: '0.75',
+    width: rando,
+    height: rando
   }, 'fast');
 };
 

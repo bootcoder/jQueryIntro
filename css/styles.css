@@ -4,6 +4,7 @@
 */
 body {
   background-color: purple;
+  margin: 1%;
 }
 
 nav {
@@ -28,21 +29,27 @@ h1 {
 
 .list_container {
   background-color: gray;
+  max-width: 300px;
+  padding: 2%;
 }
 
 .img_container {
   max-width: 100%;
 }
-/*
-.img_container {
-  max-width: 10%;
-}*/
 
 .gallery {
 width: 150px;
 height: 150px;
 margin-right: auto;
 margin-left: auto;
+}
+/*
+.top_section {
+  margin-left: 5%;
+}*/
+
+footer {
+  min-height: 600px;
 }
 
 /* Much more CSS than this tutorial needs.... Whatever Whatever, Don't judge me hippy!*/

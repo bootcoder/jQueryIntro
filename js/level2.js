@@ -5,7 +5,7 @@ var toggleDiv = function (selector) {
 
 var appendBtn = function () {
   var btn = $('#super_button');
-  btn.parent().append('<button id="new_button">Kill All Humeows</button>')
+  btn.parent().append('<button id="new_button">Meowsers</button>')
 }
 
 // blowUp Requires jQuery UI
@@ -26,17 +26,22 @@ var reduceElement = function (selector) {
 };
 
 var expandElement = function (selector) {
-  var rando = Math.floor((Math.random() * 500) + 100);
+  var randoVal = Math.floor((Math.random() * 400) + 100);
   $(selector).animate({
     opacity: '0.75',
-    width: rando,
-    height: rando
+    width: randoVal,
+    height: randoVal
   }, 'fast');
 };
 
-$('body').on('click', '#new_button', function () {
-
-})
+var dynamicButtonListener = function () {
+  $('body').on('click', '#new_button', function (e) {
+    e.preventDefault();
+    console.log('new BTN listener');
+    var kids = $('.img_container').children()
+    blowUp(kids)
+  });
+};
 
 var buttonListener = function () {
   $('#super_button').on('click', function (event) {

@@ -20,13 +20,23 @@
 //   $.ajax()
 //   various helpers
 
+// BEWARE:
+// Chrome devtools defines $ in as well. This is not jQuery.
+
 // The DOM //
+// DOM === Document Object Model
+
 // Harnessing the power of jQuery will give
 // you unprecedented control over the DOM
 // and write way less code to do so.
 
-// DOM === Document Object Model
-// jQuery allows you to easily query, traverse and manipulate DOM objects.
+// jQuery DOM features include:
+// HTML/DOM manipulation
+// CSS manipulation
+// HTML event methods
+// Effects and animations
+// AJAX
+// Utilities
 
 
 
@@ -47,4 +57,7 @@
 
 // jsfiddle - jquery show and tell with your friends
 // http://jsfiddle.net
+
+// Learn jQuery with StreetFighter
+// https://www.thinkful.com/learn/intro-to-jquery
 

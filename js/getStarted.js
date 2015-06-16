@@ -5,7 +5,10 @@ var basicSelection = function () {
 
   // jQuery === $
   // $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
-  // http://www.w3schools.com/cssref/css_selectors.asp
+  // http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+  // http://www.w3schools.com/jquery/jquery_selectors.asp
+
+  // Basic syntax is: $(selector).action()
 
   // $('.klass');
 

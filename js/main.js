@@ -1,9 +1,7 @@
 
 
-
-
-
-
+// Use document ready to wrap all your jQuery code.
+// This ensures your code will not run until the page is fully loaded.
 
 
 $(document).ready(function () {

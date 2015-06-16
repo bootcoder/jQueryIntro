@@ -17,6 +17,20 @@ var blowUp = function (selector) {
   })
 };
 
+
+// jQuery animate() is jazzy!
+// Important Note:
+// It is possible to manipulate ALLMOST all
+// CSS properties with the animate() method.
+
+// There is one important thing to remember:
+// all property names must be camel-cased when used
+// with the animate() method:
+// You will need to write paddingLeft instead of padding-left,
+// marginRight instead of margin-right, and so on.
+
+// Also, color animation is not included in the core jQuery library.
+
 var reduceElement = function (selector) {
   $(selector).animate({
     opacity: '1',
@@ -25,14 +39,26 @@ var reduceElement = function (selector) {
   }, 'slow');
 };
 
+// jQuery Callback Functions
+// JavaScript statements are executed line by line.
+// However, with effects, the next line of code can be run
+// even though the effect is not finished. This can create errors.
+// To prevent this, you can create a callback function.
+// A callback function is executed after the current effect is finished.
+// expandElement() below uses a callback.
+// Typical syntax: $(selector).hide(speed,callback);
+
 var expandElement = function (selector) {
   var randoVal = Math.floor((Math.random() * 400) + 100);
   $(selector).animate({
     opacity: '0.75',
     width: randoVal,
     height: randoVal
-  }, 'fast');
+  }, 'fast', function(){
+    console.log("I run after the jQuery function is complete.");
+  });
 };
+
 
 var dynamicButtonListener = function () {
   $('body').on('click', '#new_button', function (e) {

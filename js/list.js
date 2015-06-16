@@ -15,6 +15,14 @@ var addListItems = function () {
 };
 
 
+// Useful methods for retrieving DOM content when no argument is passed
+
+// text() - Sets or returns the text content of selected elements
+// html() - Sets or returns the content of selected elements (including HTML markup)
+// val() - Sets or returns the value of form fields
+
+// Also great for writing to DOM content when passing an argument
+
 var modListText = function () {
   var items = $('li');
   console.log(items);
@@ -44,6 +52,20 @@ var nthChild = function () {
   console.log(list_item);
   console.log('##############################');
 };
+
+
+// jQuery is super great for event handling.
+// Common events are
+// - click
+// - dblclick
+// - mouseenter
+// - mouseleave
+// - mousedown
+// - mouseup
+// - hover
+// - focus
+
+
 
 
 var listListener = function () {

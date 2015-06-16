@@ -60,7 +60,7 @@ var picListener = function () {
       reduceElement(this);
     },
     click: function () {
-      blowUp(this);
+      toggleDiv(this);
     }
   });
 };

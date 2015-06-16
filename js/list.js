@@ -30,10 +30,11 @@ var addNums = function () {
   for (i = 0; i < listLength; i += 1) {
     var item = $('.awesome_list').children()[i];
     var text = item.innerHTML;
-    item.innerHTML = text + (i + 1) + ":";
+    item.innerHTML = text + " " + (i + 1) + ":";
     // debugger
   }
 };
+
 
 var nthChild = function () {
   var list = $('.awesome_list');

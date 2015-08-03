@@ -38,10 +38,10 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 ---
 
 #### Basic functions:
-  - $() -- This is the jQuery selector
-  - $(document).ready() -- Get your scripts ready to run.
-  - $.on() -- This way to binding event delegation.
-  - $.ajax() - Want more internet than your JS script contains..? AJAX and you're there.
+  - ```$()``` -- This is the jQuery selector
+  - ```$(document).ready()``` -- Get your scripts ready to run.
+  - ```$.on()``` -- This way to binding event delegation.
+  - ```$.ajax()``` - Want more internet than your JS script contains..? AJAX and you're there.
 
 ---
 

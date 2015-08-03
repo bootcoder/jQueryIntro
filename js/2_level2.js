@@ -20,7 +20,7 @@ var blowUp = function (selector) {
 
 // jQuery animate() is jazzy!
 // Important Note:
-// It is possible to manipulate ALLMOST all
+// It is possible to manipulate ALL MOST all
 // CSS properties with the animate() method.
 
 // There is one important thing to remember:
@@ -70,8 +70,8 @@ var dynamicButtonListener = function () {
 };
 
 var buttonListener = function () {
-  $('#super_button').on('click', function (event) {
-    event.preventDefault();
+  $('#super_button').on('click', function (e) {
+    e.preventDefault();
     toggleDiv('.img_container');
     appendBtn();
   })
@@ -90,8 +90,5 @@ var picListener = function () {
     }
   });
 };
-
-
-
 
 

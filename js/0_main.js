@@ -12,14 +12,14 @@ $(document).ready(function () {
   manipulateDivs();
   iterationAndConditionals();
 
-  // js/list.js
-  listListener();
+  // // js/list.js
   addListItems();
   modListText();
   addNums();
   nthChild();
+  listListener();
 
-  // js/level2.js
+  // // js/level2.js
   picListener();
   buttonListener();
   dynamicButtonListener();

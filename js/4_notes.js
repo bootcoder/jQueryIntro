@@ -39,6 +39,12 @@
 // Utilities
 
 
+// An aside specifically for AJAX,
+// jQuery has its own flavor of AJAX
+// Being good with jQuery selectors is 3/4 of the battle
+// when writing your jQuery flavored AJAX.
+// The AJAX pattern itself is fairly simple.
+// The selection and manipulation part is where it gets tricky
 
 
 
@@ -61,3 +67,8 @@
 // Learn jQuery with StreetFighter
 // https://www.thinkful.com/learn/intro-to-jquery
 
+// Another great jQUery tutorial
+// http://learn.shayhowe.com/advanced-html-css/jquery/
+
+// Various jQuery resources
+// http://www.1stwebdesigner.com/53-jquery-tutorials-resources-tips-and-tricks-ultimate-collection/

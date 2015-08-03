@@ -1,4 +1,6 @@
+
 var addListItems = function () {
+
   // Traversal
   // $ is a great way to traverse the DOM
 
@@ -6,7 +8,6 @@ var addListItems = function () {
   var list = $('.awesome_list');
 
   var listItems = $('.awesome_list li:first-child');
-  // debugger
   // Append or remove elements
   for (var i = 0; i < 5; i += 1) {
     list.append(listItems.clone());
@@ -25,7 +26,6 @@ var addListItems = function () {
 
 var modListText = function () {
   var items = $('li');
-  console.log(items);
   items.html('List Item');
 };
 

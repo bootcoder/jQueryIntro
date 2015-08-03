@@ -16,10 +16,10 @@ var basicSelection = function () {
   // console.log($('#eyed'));
   // console.log($('h1'));
 
-  // $ Can be set to a variable
+  // // $ Can be set to a variable
 
-  var domKlass = $('.klass');
-  console.log(domKlass);
+  // var domKlass = $('.klass');
+  // console.log(domKlass);
 
   // Consoling domKlass yields what appears to be an array of elements.
   // This is not an array it is a NodeList.
@@ -76,18 +76,18 @@ var manipulateDivs = function () {
 
   // As a student, good to signal when you hit a function.
   // Strip or at least comment code like this before you commit.
-  console.log("Hit: Document Ready");
+  // console.log("Hit: Document Ready");
 
   // Assign a selection to manipulate later.
   var h1Variable = $('h1');
-  h1Variable.css('font-size', '2.5em');
+  h1Variable.css({'font-size': '2.5em', 'color': 'white'});
 
   // Or manipulate selections straight up.
-  $('h1').css('color', 'white');
   $('.klass').css('background-color', 'green');
   $('#eyed').css('background-color', 'brown');
-  $('#eyed').after($('<h3>').text('Insert sibling directly under #eyed'));
+
   $('#eyed').before($('<h3>').text('Insert sibling directly before #eyed'));
+  $('#eyed').after($('<h3>').text('Insert sibling directly under #eyed'));
 
 };
 
@@ -107,7 +107,12 @@ var iterationAndConditionals = function () {
   // Iterate over collections
   $('div').each(function(index, element){
     // console.log(index);
-    console.log(arguments);
+    // console.log(arguments);
+    // console.log('*****')
+    // console.log('element ' + element)
+    // console.log('-----')
+    // console.log('index ' + index)
+    // console.log('*****')
     // console.log(this);
     $(element).addClass('moreKlass');
   })

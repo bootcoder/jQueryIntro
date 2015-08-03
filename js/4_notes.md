@@ -53,17 +53,15 @@ Ohhh nothing really, just a little:
 
 DOM === Document Object Model
 
-Harnessing the power of jQuery will give
-you unprecedented control over the DOM
-and write way less code to do so.
+Harnessing the power of jQuery will give you unprecedented control over the DOM with the kick ass benefit of writing way less code along the way.
 
 jQuery DOM features include:
-HTML/DOM manipulation
-CSS manipulation
-HTML event methods
-Effects and animations
-AJAX
-Various utilities
+  - HTML/DOM manipulation
+  - CSS manipulation
+  - HTML event methods
+  - Effects and animations
+  - AJAX
+  - Various utilities
 
 #### AJAX
 

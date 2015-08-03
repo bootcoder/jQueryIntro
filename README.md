@@ -14,7 +14,7 @@ jQuery is a JavaScript **Library** built to make traversing and manipulating DOM
 
 ---
 
-##### Why you give a shit?
+#### Why you give a shit?
 jQuery will increase your efficiency as a Developer.
 
 It allows you to quickly move from basic BS into crazy advanced DOM manipulation.

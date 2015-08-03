@@ -74,7 +74,7 @@ jQuery DOM features include:
 Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the flavor we teach @DBC. Being good with jQuery selectors is 3/4 of the battle when writing your jQuery flavored AJAX. The AJAX pattern itself is fairly simple. The selection and manipulation of DOM elements using jQuery around an AJAX call is the tricky bit.
 
 #### ProTip:
-Chrome defines $() as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. (Laugh now... Its happened to better Devs than you friend ;-)
+Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)
 
 
 ## More Nice Links:

@@ -40,16 +40,16 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 #### Basic functions:
   - ```$()``` -- This is the jQuery selector
   - ```$(document).ready()``` -- Get your scripts ready to run.
-  - ```$.on()``` -- This way to binding event delegation.
-  - ```$.ajax()``` - Want more internet than your JS script contains..? AJAX and you're there.
+  - ```$.on()``` -- This way to binding event delegation glory.
+  - ```$.ajax()``` - Want more Internet than your JS script has to offer...? Just AJAX and you're there.
 
 ---
 
 #### Basic jQUery Workflow:
 
-Find *a thing*
+**Find** *a thing*
 
-Do *something with the thing*
+**Do** *something with the thing*
 
 __From this point forward your Chrome Dev Tools should never be closed.__
 

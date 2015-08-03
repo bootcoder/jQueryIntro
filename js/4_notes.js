@@ -6,7 +6,7 @@
 
 
 // jQuery will increase your efficiency as a Developer,
-// and lets you move quickly from beginner to advanced
+// and allows you to quickly move into advanced DOM manipulation.
 
 
 // why so awesome? cross-browser compatibility
@@ -21,7 +21,7 @@
 //   various helpers
 
 // BEWARE:
-// Chrome devtools defines $ in as well. This is not jQuery.
+// Chrome devtools defines $ as well. This is not jQuery.
 
 // The DOM //
 // DOM === Document Object Model
@@ -41,10 +41,12 @@
 
 // An aside specifically for AJAX,
 // jQuery has its own flavor of AJAX
+// which happens to be the flavor we teach @DBC.
 // Being good with jQuery selectors is 3/4 of the battle
 // when writing your jQuery flavored AJAX.
 // The AJAX pattern itself is fairly simple.
-// The selection and manipulation part is where it gets tricky
+// The selection and manipulation of DOM elements using jQuery
+// around an AJAX call is the tricky bit.
 
 
 

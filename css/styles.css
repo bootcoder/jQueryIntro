@@ -1,7 +1,7 @@
-/** {
-  border: 1px solid blue;
+* {
+  outline: 1px solid blue;
 }
-*/
+
 body {
   background-color: purple;
   margin: 1%;

@@ -1,6 +1,8 @@
 # jQuery intro notes:
 
-## General Notes
+### General Notes
+
+---
 
 #### What is it?
 jQuery is a JavaScript **Library** built to make traversing and manipulating DOM elements a breeze.
@@ -35,7 +37,7 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 
 ---
 
-#### Basic functions?
+#### Basic functions:
   - $() -- This is the jQuery selector
   - $(document).ready() -- Get your scripts ready to run.
   - $.on() -- This way to binding event delegation.
@@ -51,7 +53,9 @@ Do *something with the thing*
 
 __From this point forward your Chrome Dev Tools should never be closed.__
 
-## The DOM
+---
+
+### The DOM:
 
 DOM === Document Object Model
 
@@ -65,7 +69,7 @@ jQuery DOM features include:
   - AJAX
   - Various utilities
 
-#### AJAX
+#### AJAX:
 
 Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the flavor we teach @DBC. Being good with jQuery selectors is 3/4 of the battle when writing your jQuery flavored AJAX. The AJAX pattern itself is fairly simple. The selection and manipulation of DOM elements using jQuery around an AJAX call is the tricky bit.
 
@@ -73,7 +77,7 @@ Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the
 Chrome defines $() as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. (Laugh now... Its happened to better Devs than you friend ;-)
 
 
-## Nice Links for you.
+## More Nice Links:
 
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 

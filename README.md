@@ -22,7 +22,7 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 #### Why so awesome?
 
 - Plugins - Plugins - Plugins!
-[Awesome Javascript](https://github.com/sorrycc/awesome-javascript) Fantastic link on its own. But to the point about plugins, go ahead and search for ```jQuery```... Tip of the iceberg buddy.
+  - Here's a fantastic JS link. But to the point about plugins, go ahead and search for ```jQuery```... Tip of the iceberg buddy. [Awesome Javascript](https://github.com/sorrycc/awesome-javascript)
 - Super easy to pick up.
 - Quickly grab those pesky lil divs tucked away in your DOM.
 - Looks great on the ol' resume.
@@ -47,8 +47,8 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
  find *something*
  do *something*
 
- BEWARE:
- Chrome devtools defines $ as well. This is not jQuery.
+#### BEWARE:
+Chrome devtools defines $ as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. (Laugh now... Its happened to better Devs than you friend ;-)
 
 ## The DOM
 

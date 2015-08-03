@@ -5,32 +5,33 @@
 #### What is it?
 jQuery is a JavaScript **Library** built to make traversing and manipulating DOM elements a breeze.
 
-| jQuery | JavaScript | Angular |
-|-----:|-----:|-----:|
-| === | === | === |
-| Library | Language | Framework |
+| jQuery | === | Library |
+|---:|---:|---:|
+| JavaScript | === | Language |
+| Angular | === | Framework |
 
 ---
 
 ##### Why you give a shit?
-jQuery will increase your efficiency as a Developer,
-and allows you to quickly move into advanced DOM manipulation.
+jQuery will increase your efficiency as a Developer.
+
+It allows you to quickly move from basic BS into crazy advanced DOM manipulation.
 
 ---
 
 #### Why so awesome?
 
-Ohhh nothing really, just a little:
-
-  - Cross-browser Compatibility
-    - Chrome
-    - Internet Explorer
-    - Safari
-    - Firefox
-    - Opera
-  - Super easy to pick up.
-  - Quickly grab those pesky lil divs tucked away in your DOM.
-  - Looks great on the ol' resume.
+- Plugins - Plugins - Plugins!
+[Awesome Javascript](https://github.com/sorrycc/awesome-javascript) Fantastic link on its own. But to the point about plugins, go ahead and search for ```jQuery```... Tip of the iceberg buddy.
+- Super easy to pick up.
+- Quickly grab those pesky lil divs tucked away in your DOM.
+- Looks great on the ol' resume.
+- Cross-browser Compatibility
+  - Chrome
+  - Internet Explorer
+  - Safari
+  - Firefox
+  - Opera
 
 ---
 
@@ -70,17 +71,17 @@ Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the
 
 ## Nice Links for you.
 
+[Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 
-[Quick look at Twenty Great jQuery methods](http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521)
+[Learn jQuery with StreetFighter](https://www.thinkful.com/learn/intro-to-jquery)
+
+[Various jQuery resources](http://www.1stwebdesigner.com/53-jquery-tutorials-resources-tips-and-tricks-ultimate-collection/)
 
 [Style Guide](http://learn.jquery.com/style-guide/)
+
+[Quick look at Twenty Great jQuery methods](http://code.tutsplus.com/tutorials/20-helpful-jquery-methods-you-should-be-using--net-10521)
 
 [Truthy VS: Falsey](http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html)
 
 [jsfiddle - jquery show and tell with your friends](http://jsfiddle.net)
 
-[Learn jQuery with StreetFighter](https://www.thinkful.com/learn/intro-to-jquery)
-
-[Another great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
-
-[Various jQuery resources](http://www.1stwebdesigner.com/53-jquery-tutorials-resources-tips-and-tricks-ultimate-collection/)

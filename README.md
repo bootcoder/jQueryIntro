@@ -44,11 +44,12 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 ---
 
 #### Basic jQUery Workflow:
- find *something*
- do *something*
 
-#### BEWARE:
-Chrome devtools defines $ as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. (Laugh now... Its happened to better Devs than you friend ;-)
+Find *a thing*
+
+Do *something with the thing*
+
+__From this point forward your Chrome Dev Tools should never be closed.__
 
 ## The DOM
 
@@ -67,6 +68,9 @@ jQuery DOM features include:
 #### AJAX
 
 Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the flavor we teach @DBC. Being good with jQuery selectors is 3/4 of the battle when writing your jQuery flavored AJAX. The AJAX pattern itself is fairly simple. The selection and manipulation of DOM elements using jQuery around an AJAX call is the tricky bit.
+
+#### ProTip:
+Chrome defines $() as well. This is not jQuery. Always be sure you have `actually` loaded jQuery into your project. (Laugh now... Its happened to better Devs than you friend ;-)
 
 
 ## Nice Links for you.

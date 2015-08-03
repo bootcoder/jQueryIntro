@@ -16,13 +16,13 @@ var addListItems = function () {
 };
 
 
-// Useful methods for retrieving DOM content when no argument is passed
+// Useful methods for READING DOM content when no argument is passed
 
 // text() - Sets or returns the text content of selected elements
 // html() - Sets or returns the content of selected elements (including HTML markup)
 // val() - Sets or returns the value of form fields
 
-// Also great for writing to DOM content when passing an argument
+// Also great for WRITING to the DOM, just pass an argument to convert these into setter methods.
 
 var modListText = function () {
   var items = $('li');

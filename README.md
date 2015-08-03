@@ -22,7 +22,7 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 #### Why so awesome?
 
 - Plugins - Plugins - Plugins!
-  - Here's a fantastic JS link. But to the point about plugins, go ahead and search for ```jQuery```... Tip of the iceberg buddy. [Awesome Javascript](https://github.com/sorrycc/awesome-javascript)
+  - [Awesome Javascript:](https://github.com/sorrycc/awesome-javascript) Here's a fantastic JS link. To the point on plugins, go ahead, search for ```jQuery```... Tip of the iceberg buddy.
 - Super easy to pick up.
 - Quickly grab those pesky lil divs tucked away in your DOM.
 - Looks great on the ol' resume.

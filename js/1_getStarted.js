@@ -117,14 +117,14 @@ var iterationAndConditionals = function () {
     $(element).addClass('moreKlass');
   })
 
-  // A note about conditionals:
+  // CONDITIONALS:
 
   if ($('#nonexistent')) {
     // No Bueno, This code will always run.
     // Want to know more baout Truthy VS Falsy in JS
     // http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
     // jQuery always returns an object, no matter whether the selector matched or not.
-    console.log("This shouldn't be here...");
+    console.log("CONDITIONALS: This shouldn't be here...");
   }
 
   // Test objects with the following:
@@ -132,8 +132,8 @@ var iterationAndConditionals = function () {
   if ($('#existent').length) {
   // if ($('#existent').length > 0) {
     // This code will only run if the thing actually exists.
-    console.log("Object found in DOM");
+    console.log("CONDITIONALS: Object found in DOM");
   } else {
-    console.log("ERRRRROR:");
+    console.log("CONDITIONALS: ERRRRROR");
   }
 };

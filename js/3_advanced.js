@@ -49,11 +49,10 @@ var reduceElement = function (selector) {
 // Typical syntax: $(selector).hide(speed,callback);
 
 var expandElement = function (selector) {
-  var randoVal = Math.floor((Math.random() * 400) + 100);
   $(selector).animate({
     opacity: '0.75',
-    width: randoVal,
-    height: randoVal
+    width: 200,
+    height: 200
   }, 'fast', function(){
     console.log("I run after the jQuery function is complete.");
   });
@@ -90,5 +89,22 @@ var picListener = function () {
     }
   });
 };
+
+var picReturnListener = function() {
+  $('#show_all_BTN').on('click', function(){
+    var galleryItems = $('.gallery');
+    $.each(galleryItems, function( i, val ){
+      // console.log($(val))
+
+      // This will work.
+      $(val).css('display', 'inline');
+      // This will not.
+      // val.css('display', 'block');
+      // You cannot run jQuery methods on straight DOM elements.
+      // You must create jQuery objects first.
+    })
+  })
+}
+
 
 

@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: purple;
+  background-color: gray;
   margin: 1%;
 }
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 .list_container {
-  background-color: gray;
+  background-color: darkgray;
   max-width: 300px;
   padding: 2%;
 }

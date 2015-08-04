@@ -6,21 +6,22 @@
 
 $(document).ready(function () {
 
-  // js/getStarted.js
+  // js/1_getStarted.js
   basicSelection();
   chainingCalls();
   manipulateDivs();
   iterationAndConditionals();
 
-  // // js/list.js
+  // // js/2_list.js
   addListItems();
   modListText();
   addNums();
   nthChild();
   listListener();
 
-  // // js/level2.js
+  // // js/3_advanced.js
   picListener();
+  picReturnListener()
   buttonListener();
   dynamicButtonListener();
 

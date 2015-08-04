@@ -4,6 +4,8 @@
 
   <title>JqueryIntro</title>
 
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -18,29 +20,27 @@
 
 </head>
 <body>
-  <nav>
-    <h3>jQuery Integration Testing Grounds</h3>
-  </nav>
+  <nav>jQuery Integration Testing Grounds</nav>
   <div class="top_section">
     <div id="eyed" class="klass">
-      <h1>#eyed</h1>
+      <h1>Div with ID #eyed</h1>
     </div>
 
     <hr>
 
     <div class="klass">
-      <h1>.klass</h1>
+      <h1>Div with CLASS .klass</h1>
     </div>
 
-    <div id="existent"><p>I am a thing</p></div>
+    <div id="existent"><p>Test the existence of a DIV -- I am a `thing`</p></div>
     <hr>
   </div>
 
-  <div>
-    <h3>This section shows how to dynamically generate and manipulate things</h3>
+  <div class="container-fluid">
+    <h3>This section shows dynamically generated things</h3>
     <ul class="awesome_list">
       <li class="item">Item</li>
-      <li class="item">Itam</li>
+      <li class="item">Item</li>
     </ul>
   </div>
 
@@ -48,6 +48,7 @@
 
   <div>
     <button id="super_button">Images</button>
+    <button id="show_all_BTN">Show All</button>
     <div class="img_container" style="display: none;">
       <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=png">
       <img class="gallery" src="https://avatars.githubusercontent.com/u/10055540?v=3">

@@ -79,6 +79,8 @@ Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **
 
 ## More Nice Links:
 
+[jQuery CheatSheet](http://oscarotero.com/jquery/)
+
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 
 [Learn jQuery with StreetFighter](https://www.thinkful.com/learn/intro-to-jquery)
@@ -93,3 +95,8 @@ Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **
 
 [jsfiddle - jquery show and tell with your friends](http://jsfiddle.net)
 
+[30 Great CSS Selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+[Another jQuery Cheatsheet (PDF)](http://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf)
+
+[jQuery Selectors](http://www.w3schools.com/jquery/jquery_selectors.asp)

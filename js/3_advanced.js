@@ -20,7 +20,7 @@ var blowUp = function (selector) {
 
 // jQuery animate() is jazzy!
 // Important Note:
-// It is possible to manipulate ALL MOST all
+// It's possible to manipulate ALMOST all
 // CSS properties with the animate() method.
 
 // There is one important thing to remember:

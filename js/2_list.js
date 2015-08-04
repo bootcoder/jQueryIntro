@@ -16,6 +16,15 @@ var addListItems = function () {
 };
 
 
+
+
+
+
+
+
+
+
+
 // Useful methods for READING DOM content when no argument is passed
 
 // text() - Sets or returns the text content of selected elements
@@ -28,6 +37,19 @@ var modListText = function () {
   var items = $('li');
   items.html('List Item');
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var addNums = function () {
@@ -70,6 +92,16 @@ var nthChild = function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
 var listListener = function () {
   $('ul').on({
     mouseenter: function () {
@@ -83,3 +115,18 @@ var listListener = function () {
     }
   }, 'li');
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

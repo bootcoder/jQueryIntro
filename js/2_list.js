@@ -47,10 +47,12 @@ var addNums = function () {
 var nthChild = function () {
   var list = $('.awesome_list');
   var list_item = list.find(':nth-child(4)');
-  // Important to note here that nth-child is a 1 base index.
-  console.log('##############################');
-  console.log(list_item);
-  console.log('##############################');
+  // Important to note: nth-child is 1 base index.
+
+  // console.log('##############################');
+  // console.log(list_item);
+  // console.log('##############################');
+
 };
 
 

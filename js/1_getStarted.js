@@ -121,19 +121,25 @@ var iterationAndConditionals = function () {
 
   if ($('#nonexistent')) {
     // No Bueno, This code will always run.
-    // Want to know more baout Truthy VS Falsy in JS
+    // Want to know more about Truthy VS Falsy in JS
     // http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
     // jQuery always returns an object, no matter whether the selector matched or not.
-    console.log("CONDITIONALS: This shouldn't be here...");
+
+    // console.log("CONDITIONALS: This shouldn't be here...");
+
   }
 
   // Test objects with the following:
   // Both if statements below function the same.
   if ($('#existent').length) {
+  // OR:
   // if ($('#existent').length > 0) {
-    // This code will only run if the thing actually exists.
-    console.log("CONDITIONALS: Object found in DOM");
+
+    // console.log("CONDITIONALS: Object found in DOM");
+
   } else {
-    console.log("CONDITIONALS: ERRRRROR");
+
+    // console.log("CONDITIONALS: ERRRRROR");
+
   }
 };

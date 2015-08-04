@@ -53,8 +53,8 @@ var expandElement = function (selector) {
     opacity: '0.75',
     width: 200,
     height: 200
-  }, 'fast', function(){
-    console.log("I run after the jQuery function is complete.");
+  }, 'slow', function(){
+    console.log("I run after the expandELement function is complete.");
   });
 };
 

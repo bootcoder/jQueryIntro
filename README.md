@@ -79,7 +79,7 @@ Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **
 
 ## More Nice Links:
 
-[jQuery CheatSheet](http://oscarotero.com/jquery/)
+[THE jQuery CheatSheet](http://oscarotero.com/jquery/)
 
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 

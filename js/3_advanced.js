@@ -10,10 +10,10 @@ var appendBtn = function () {
 
 // blowUp Requires jQuery UI
 var blowUp = function (selector) {
-  $(selector).toggle('explode', {pieces: 16}, 2000, function () {
+  $(selector).toggle('explode', {pieces: 100}, 2000, function () {
     // Toggle like many jQuery functions accepts a callback...
     // So I can un-toggle the thing once my toggling of the thing is complete
-    $(selector).toggle('explode', {pieces: 9}, 1000);
+    $(selector).toggle('explode', {pieces: 100}, 1000);
   })
 };
 
@@ -54,7 +54,7 @@ var expandElement = function (selector) {
     width: 200,
     height: 200
   }, 'slow', function(){
-    console.log("I run after the expandELement function is complete.");
+    console.log("I run after the expandElement function is complete.");
   });
 };
 
@@ -98,6 +98,7 @@ var picReturnListener = function() {
 
       // This will work.
       $(val).css('display', 'inline');
+
       // This will not.
       // val.css('display', 'block');
       // You cannot run jQuery methods on straight DOM elements.

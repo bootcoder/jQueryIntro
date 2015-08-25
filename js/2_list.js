@@ -1,16 +1,13 @@
 
 var addListItems = function () {
 
-  // Traversal
-  // $ is a great way to traverse the DOM
-
   // Look down to sub-elements
   var list = $('.awesome_list');
 
-  var listItems = $('.awesome_list li:first-child');
+  var listItem = $('.awesome_list li:first-child');
   // Append or remove elements
   for (var i = 0; i < 5; i += 1) {
-    list.append(listItems.clone());
+    list.append(listItem.clone());
   }
 
 };
@@ -54,10 +51,9 @@ var modListText = function () {
 
 var addNums = function () {
   // Work with data from each element in a collection.
-  var i = 0;
   var listLength = $('.awesome_list').children().length;
 
-  for (i = 0; i < listLength; i += 1) {
+  for (var i = 0; i < listLength; i += 1) {
     var item = $('.awesome_list').children()[i];
     var text = item.innerHTML;
     item.innerHTML = text + " " + (i + 1) + ":";
@@ -71,9 +67,9 @@ var nthChild = function () {
   var list_item = list.find(':nth-child(4)');
   // Important to note: nth-child is 1 base index.
 
-  // console.log('##############################');
-  // console.log(list_item);
-  // console.log('##############################');
+  console.log('##############################');
+  console.log(list_item);
+  console.log('##############################');
 
 };
 
@@ -115,6 +111,43 @@ var listListener = function () {
     }
   }, 'li');
 };
+
+
+
+
+
+// event delegation with and without example
+
+// var listListener = function(){
+//   $('li').on('click', function(){
+//     console.log("all the li things");
+//   })
+// }
+
+
+
+
+// RECOMENDED PATTERN
+
+// var listListener = function(){
+//   $('ul').on('click', 'li', function(){
+//     console.log("all the li things");
+//   })
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

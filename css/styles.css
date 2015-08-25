@@ -38,10 +38,9 @@ h1 {
 }
 
 .gallery {
-width: 150px;
-height: 150px;
-margin-right: auto;
-margin-left: auto;
+  margin: 2%;
+  width: 150px;
+  height: 150px;
 }
 /*
 .top_section {

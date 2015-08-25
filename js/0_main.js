@@ -9,30 +9,31 @@ $(document).ready(function () {
 
   // js/1_getStarted.js
 
-  // basicSelection();
-  // chainingCalls();
-  // manipulateDivs();
-  // iterationAndConditionals();
+  basicSelection();
+  chainingCalls();
+  manipulateDivs();
+  iterationAndConditionals();
 
 
 
 
   // // js/2_list.js
 
-  // addListItems();
-  // modListText();
-  // addNums();
-  // nthChild();
-  // listListener();
+  addListItems();
+  modListText();
+  addNums();
+  nthChild();
+  listListener();
 
 
 
 
   // // js/3_advanced.js
 
-  // picListener();
-  // picReturnListener()
-  // buttonListener();
-  // dynamicButtonListener();
+  picListener();
+  picReturnListener();
+  buttonListener();
+  dynamicButtonListener();
+
 
 });

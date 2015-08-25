@@ -1,6 +1,3 @@
-
-
-
 var basicSelection = function () {
 
   // jQuery === $

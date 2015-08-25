@@ -48,17 +48,11 @@ h1 {
   padding-bottom: 150px; /* this needs to be bigger than footer height*/
 }
 
-.footer-wrapper {
-  min-height: 100%;
+.footer {
+  text-align: right;
+  padding: 1%;
 }
 
-footer {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
-}
 
 
 

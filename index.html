@@ -20,47 +20,66 @@
 
 </head>
 <body>
+
   <nav>jQuery Integration Testing Grounds</nav>
-  <div class="top_section">
-    <div id="eyed" class="klass">
-      <h1>Div with ID #eyed</h1>
+  <div class="main-page">
+    <div class="container-fluid">
+
+      <div class="top_section col-md-12">
+      <h3>DIVS DIVS and MORE DIVS</h3>
+        <div class="row">
+          <div id="eyed" class="klass col-md-6">
+            <h1>Div with ID #eyed</h1>
+          </div>
+
+          <div class="klass col-md-6">
+            <h1>Div with CLASS .klass</h1>
+          </div>
+
+        </div>
+
+        <div class="row container-fluid">
+          <div class="col-md-6 col-md-offset-3">
+            <h3>Dealing with Dynamically Generated Things</h3>
+            <ul class="awesome_list">
+              <li class="item">Item</li>
+              <li class="item">Item</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
     <hr>
 
-    <div class="klass">
-      <h1>Div with CLASS .klass</h1>
+    <div id="existent">
+      <h3>Conditional Proving Grounds</h3>
+      <p>Test the existence of a DIV -- I am a `thing`</p>
     </div>
 
-    <div id="existent"><p>Test the existence of a DIV -- I am a `thing`</p></div>
+    <hr>
 
-  </div>
-
-  <div class="container-fluid">
-    <h3>This section shows dynamically generated things</h3>
-    <ul class="awesome_list">
-      <li class="item">Item</li>
-      <li class="item">Item</li>
-    </ul>
-  </div>
-
-  <hr>
-
-  <div>
-    <button id="super_button">Images</button>
-    <div class="img_container" style="display: none;">
-      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=png">
-      <img class="gallery" src="https://avatars.githubusercontent.com/u/10055540?v=3">
-      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=gif">
-      <img class="gallery" src="https://avatars.githubusercontent.com/u/11602772?v=3">
-      <img class="gallery" src="http://thecatapi.com/api/images/get?format=src&type=jpg">
+    <div>
+      <h3>Cool Shit Maybe</h3>
+      <button id="super_button">Images</button>
+      <div class="img_container" style="display: none;">
+        <img class="gallery" src="https://avatars.githubusercontent.com/u/11875718?v=3">
+        <img class="gallery" src="https://avatars.githubusercontent.com/u/6699432?v=3">
+        <img class="gallery gif" src="http://thecatapi.com/api/images/get?format=src&type=gif">
+        <img class="gallery" src="https://avatars.githubusercontent.com/u/10890778?v=3">
+        <img class="gallery" src="https://avatars.githubusercontent.com/u/11699845?v=3">
+      </div>
+      <button id="show_all_BTN">Show All</button>
     </div>
-    <button id="show_all_BTN">Show All</button>
   </div>
 
-  <footer>
-    <p>Ultra super mega beautiful design by BootCoder</p>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <p>Ultra super mega beautiful design by BootCoder</p>
+    </footer>
+  </div>
 
   <script type="text/javascript" src="js/0_main.js"></script>
 

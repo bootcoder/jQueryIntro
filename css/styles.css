@@ -1,10 +1,9 @@
-* {
+/** {
   outline: 1px solid blue;
-}
+}*/
 
-body {
+html, body {
   background-color: gray;
-  margin: 1%;
 }
 
 nav {
@@ -29,7 +28,6 @@ h1 {
 
 .list_container {
   background-color: darkgray;
-  max-width: 300px;
   padding: 2%;
 }
 
@@ -42,16 +40,27 @@ h1 {
   width: 150px;
   height: 150px;
 }
-/*
-.top_section {
-  margin-left: 5%;
-}*/
-
-footer {
-  min-height: 600px;
-}
 
 /* Much more CSS than this tutorial needs.... Whatever Whatever, Don't judge me hippy!*/
+
+.main-page {
+  overflow: auto;
+  padding-bottom: 150px; /* this needs to be bigger than footer height*/
+}
+
+.footer-wrapper {
+  min-height: 100%;
+}
+
+footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
+
+
 
 button {
   background-color:#ed8223;

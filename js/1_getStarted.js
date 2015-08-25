@@ -53,7 +53,7 @@ var chainingCalls = function () {
   jBody.css('font-style', 'italic');
 
   // Traversing up the tree in the same manner.
-  var parentDiv = $('ul').parents('div');
+  var parentDiv = $('ul').parent('div');
   parentDiv.addClass('list_container');
 
 };
@@ -83,8 +83,8 @@ var manipulateDivs = function () {
   $('.klass').css('background-color', 'green');
   $('#eyed').css('background-color', 'brown');
 
-  $('#eyed').before($('<h3>').text('Insert sibling directly before #eyed'));
-  $('#eyed').after($('<h3>').text('Insert sibling directly under #eyed'));
+  $('.klass h1').before($('<h3>').text('Insert sibling directly before .klass'));
+  $('.klass h1').after($('<h3>').text('Insert sibling directly under .klass'));
 
 };
 

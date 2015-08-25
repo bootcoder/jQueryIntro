@@ -47,11 +47,9 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 
 #### Basic jQUery Workflow:
 
-**Find** *a thing*
+**Find** *a* ```thing```
 
-**Do** *something with the thing*
-
-__From this point forward your Chrome Dev Tools should never be closed.__
+**Do** *something with the* ```thing```
 
 ---
 
@@ -75,6 +73,8 @@ Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the
 
 #### ProTip:
 Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **_actually_** loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)
+
+__From this point forward your Chrome Dev Tools should never be closed.__
 
 
 ## More Nice Links:

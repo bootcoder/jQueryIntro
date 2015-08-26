@@ -34,6 +34,5 @@ $(document).ready(function () {
   picReturnListener();
   buttonListener();
   dynamicButtonListener();
-  picLoader();
 
 });

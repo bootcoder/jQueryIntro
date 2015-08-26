@@ -53,6 +53,25 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 
 ---
 
+### Event Delegation
+Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.
+
+```javascript
+
+var static = $('some-static-parent-element');
+var dynamic = $('dynamically created element you want');
+
+var delegatedEventListener = function(){
+  $(static).on('click', 'dynamic', function(event){
+    event.preventDefault();
+    console.log(event);
+    console.log(this);
+    doSomethingFunction();
+  })
+};
+
+```
+
 ### The DOM:
 
 DOM === Document Object Model

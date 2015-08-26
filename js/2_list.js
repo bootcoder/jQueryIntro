@@ -88,15 +88,49 @@ var nthChild = function () {
 
 
 
+////////////////////////////////////////
+////////////////////////////////////////
+//////////// EVENT BINDING /////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//////////// READ MORE here. ///////////
+////////////////////////////////////////
+// http://learn.jquery.com/events/event-delegation/
+////////////////////////////////////////
+
+
+// This standard listener will only work for static content.
+var standardListener = function(){
+//  Target    Event
+//   ↓↓       ↓↓↓↓↓
+  $('li').on('click', function(event){
+    console.log(this);
+    console.log(event);
+  })
+};
 
 
 
 
+// RECOMENDED PATTERN
+
+var delegatedListener = function(event){
+// Parent     Event  Target
+//   ↓↓       ↓↓↓↓↓    ↓↓
+  $('ul').on('click', 'li', function(){
+    console.log(this);
+    console.log(event);
+  })
+};
 
 
+// Terrible Example.... for now
 
+// This listener uses both event delegation
+// and an object to handle events on an element.
 
-
+// A strong argument could be made to split
+// this out to three separate functions.
 
 var listListener = function () {
   $('ul').on({
@@ -115,25 +149,6 @@ var listListener = function () {
 
 
 
-
-// event delegation with and without example
-
-// var listListener = function(){
-//   $('li').on('click', function(){
-//     console.log("all the li things");
-//   })
-// }
-
-
-
-
-// RECOMENDED PATTERN
-
-// var listListener = function(){
-//   $('ul').on('click', 'li', function(){
-//     console.log("all the li things");
-//   })
-// }
 
 
 

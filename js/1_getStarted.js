@@ -43,9 +43,9 @@ var chainingCalls = function () {
 
   var jBody = $( 'body' ).children();
 
-  // console.log('***********');
-  // console.log(jBody);
-  // console.log('***********');
+  console.log('***********');
+  console.log(jBody);
+  console.log('***********');
 
 
   // $ Can be used to modify objects
@@ -53,7 +53,7 @@ var chainingCalls = function () {
   jBody.css('font-style', 'italic');
 
   // Traversing up the tree in the same manner.
-  var parentDiv = $('ul').parent('div');
+  var parentDiv = $('ul').parent();
   parentDiv.addClass('list_container');
 
 };
@@ -122,7 +122,7 @@ var iterationAndConditionals = function () {
     // http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
     // jQuery always returns an object, no matter whether the selector matched or not.
 
-    // console.log("CONDITIONALS: This shouldn't be here...");
+    console.log("CONDITIONALS: This shouldn't be here...");
 
   }
 
@@ -132,7 +132,7 @@ var iterationAndConditionals = function () {
   // OR:
   // if ($('#existent').length > 0) {
 
-    // console.log("CONDITIONALS: Object found in DOM");
+    console.log("CONDITIONALS: Object found in DOM");
 
   } else {
 

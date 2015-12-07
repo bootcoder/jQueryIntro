@@ -6,7 +6,6 @@
 
 $(document).ready(function () {
 
-
   // js/1_getStarted.js
 
   basicSelection();
@@ -19,6 +18,8 @@ $(document).ready(function () {
 
   // // js/2_list.js
 
+  // delegatedListener();
+  // standardListener();
   addListItems();
   modListText();
   addNums();

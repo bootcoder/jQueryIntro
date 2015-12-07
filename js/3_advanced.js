@@ -10,10 +10,10 @@ var appendBtn = function () {
 
 // blowUp Requires jQuery UI
 var blowUp = function (selector) {
-  $(selector).toggle('explode', {pieces: 100}, 2000, function () {
+  $(selector).toggle('explode', {pieces: 19}, 2000, function () {
     // Toggle like many jQuery functions accepts a callback...
     // So I can un-toggle the thing once my toggling of the thing is complete
-    $(selector).toggle('explode', {pieces: 100}, 1000);
+    $(selector).toggle('explode', {pieces: 7}, 1000);
   })
 };
 
@@ -64,7 +64,7 @@ var dynamicButtonListener = function () {
     e.preventDefault();
     console.log('new BTN listener');
     var kids = $('.img_container').children()
-    blowUp(kids)
+    blowUp(kids);
   });
 };
 
@@ -76,6 +76,8 @@ var buttonListener = function () {
   })
 };
 
+
+// Example that is STILL not good for you right now........
 var picListener = function () {
   $('.gallery').on({
     mouseenter: function () {
@@ -106,5 +108,4 @@ var picReturnListener = function() {
     })
   })
 }
-
 

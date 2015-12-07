@@ -111,13 +111,15 @@ var standardListener = function(){
 
 
 
-
-// RECOMENDED PATTERN
+/////////////////////////////////////
+// ***** RECOMENDED PATTERN ****** //
+// ***   For Event Handlers    *** //
+/////////////////////////////////////
 
 var delegatedListener = function(event){
 // Parent     Event  Target
 //   ↓↓       ↓↓↓↓↓    ↓↓
-  $('ul').on('click', 'li', function(){
+  $('ul').on('click', 'li a', function(){
     console.log(this);
     console.log(event);
   })
@@ -145,36 +147,3 @@ var listListener = function () {
     }
   }, 'li');
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

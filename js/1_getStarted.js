@@ -1,7 +1,7 @@
 var basicSelection = function () {
 
   // jQuery === $
-  // $ takes standard CSS selectors, ex: .klass && #eyed && <h1>
+  // $ takes standard CSS selectors, ex: .klass && #eyed && 'h1'
   // http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
   // http://www.w3schools.com/jquery/jquery_selectors.asp
 
@@ -43,9 +43,9 @@ var chainingCalls = function () {
 
   var jBody = $( 'body' ).children();
 
-  console.log('***********');
-  console.log(jBody);
-  console.log('***********');
+  // console.log('***********');
+  // console.log(jBody);
+  // console.log('***********');
 
 
   // $ Can be used to modify objects
@@ -100,7 +100,6 @@ var manipulateDivs = function () {
 
 
 var iterationAndConditionals = function () {
-
   // Iterate over collections
   $('div').each(function(index, element){
     // console.log(index);

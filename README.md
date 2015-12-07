@@ -53,6 +53,9 @@ It allows you to quickly move from basic BS into crazy advanced DOM manipulation
 
 ---
 
+### Sample Code
+Have a solid look through the code included in this repo. It gives a 1000ft overview of basic jQuery functionality.
+
 ### Event Delegation
 Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.
 
@@ -72,6 +75,8 @@ var delegatedEventListener = function(){
 
 ```
 
+**Translation** - Make this your DEFAULT pattern. Using this pattern for building event listeners allows you on listen to DOM elements which will be dynamically placed on the page after the initial load.
+
 ### The DOM:
 
 DOM === Document Object Model
@@ -86,11 +91,11 @@ jQuery DOM features include:
   - AJAX
   - Various utilities
 
-#### AJAX:
+### AJAX:
 
 Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the flavor we teach @DBC. Being good with jQuery selectors is 3/4 of the battle when writing your jQuery flavored AJAX. The AJAX pattern itself is fairly simple. The selection and manipulation of DOM elements using jQuery around an AJAX call is the tricky bit.
 
-#### ProTip:
+### ProTip:
 Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **_actually_** loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)
 
 __From this point forward your Chrome Dev Tools should never be closed.__

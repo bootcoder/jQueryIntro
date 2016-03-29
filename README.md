@@ -62,10 +62,9 @@ Event delegation refers to the process of using event propagation (bubbling) to 
 ```javascript
 
 var static = $('some-static-parent-element');
-var dynamic = $('dynamically created element you want');
 
 var delegatedEventListener = function(){
-  $(static).on('click', 'dynamic', function(event){
+  $(static).on('click', '.some_dynamic_class', function(event){
     event.preventDefault();
     console.log(event);
     console.log(this);

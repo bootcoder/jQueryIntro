@@ -15,9 +15,9 @@ jQuery is a JavaScript **Library** built to make traversing and manipulating DOM
 ---
 
 #### Why you give a shit?
-jQuery will increase your efficiency as a Developer.
+jQuery can dramatically increase your efficiency as a Developer.
 
-It allows you to quickly move from basic BS into crazy advanced DOM manipulation.
+It allows you to quickly move from basic selection to crazy advanced DOM manipulation.
 
 ---
 
@@ -93,7 +93,73 @@ jQuery DOM features include:
 
 ### AJAX:
 
-Specifically for AJAX, jQuery has its own flavor of AJAX which happens to be the flavor we teach @DBC. Being good with jQuery selectors is 3/4 of the battle when writing your jQuery flavored AJAX. The AJAX pattern itself is fairly simple. The selection and manipulation of DOM elements using jQuery around an AJAX call is the tricky bit.
+AJAX is my **FAVORITE** part of Javascript, it's the part that talks to Ruby!
+
+![AJAX](ajax.png)
+
+_Pro Tip:_ Being good with jQuery selectors is 3/4 of the battle when writing AJAX.
+
+#### Sample Workflow in AJAX
+
+1. Use jQuery to grab specific attributes from DOM elements and set them to a variable within whatever function is handling the event.
+2. Construct the actual AJAX call, passing the variables above as arguments.
+3. _At this point we leave JS land and go back to Ruby land._
+4. Server side route should see that the request is from AJAX,
+5. Format data appropriately and return valid data.
+6. _Now leave the server and come back to JS land._
+7. Write a ```.done``` method to go along with your request. Use this to consume the response data you received and update the DOM accordingly. You should also write a ```.fail``` function always and forever. See the note below the code for a good reason.
+
+```js
+// STEP: 1
+var url_variable = $('#thing').attr('href');
+var action_variable = $('#thing').attr('action');
+var data_variable = $('#thing').serialize();
+
+// STEP: 2
+var request = $.ajax({
+  url: url_variable,
+  type: action_variable,
+  data: data_variable
+})
+
+// STEP: 6
+request.done(function(response_data){
+  console.log(response_data);
+  $('#thing2').append(response_data);
+})
+
+request.fail(function(response_data){
+  console.log(response_data);
+  console.log("Ohhhh Noooo");
+})
+```
+
+```ruby
+get '/dogs/new' do
+  # STEP: 4
+  if request.xhr?
+    # STEP: 5
+    erb: :'dogs/new', layout: false
+  else
+    erb :'dogs/new'
+  end
+end
+
+post '/dogs' do
+  @dog = Dog.new(params[:dog])
+  if @dog.save
+    # STEP: 4
+    if request.xhr?
+      # STEP: 5
+      @dog.to_json
+    else
+      redirect '/dogs'
+    end
+  end
+end
+```
+
+In the ```GET``` route above we are sending a partial back to AJAX. In the ```POST``` route we are sending back the @dog object as JSON. Same rules as always applies here. _Be VERY aware of what_ your methods are returning. If you are expecting a partial and get JSON your AJAX will fail. :-(
 
 ### ProTip:
 Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **_actually_** loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)

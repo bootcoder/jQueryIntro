@@ -15,8 +15,8 @@ var basicSelection = function () {
 
   // // $ Can be set to a variable
 
-  // var domKlass = $('.klass');
-  // console.log(domKlass);
+  var $domKlass = $('.klass');
+  console.log($domKlass);
 
   // Consoling domKlass yields what appears to be an array of elements.
   // This is not an array it is a NodeList.
@@ -43,9 +43,9 @@ var chainingCalls = function () {
 
   var jBody = $( 'body' ).children();
 
-  // console.log('***********');
-  // console.log(jBody);
-  // console.log('***********');
+  console.log('***********');
+  console.log(jBody);
+  console.log('***********');
 
 
   // $ Can be used to modify objects

@@ -1,3 +1,13 @@
+var doSomeStuff = function() {
+  var jo;
+  setTimeout(function(){
+    jo = 2+3
+    console.log("Hello");
+   }, 3000);
+  console.log(" I did the things YAY");
+
+}
+
 
 var toggleDiv = function (selector) {
   $(selector).slideToggle();
@@ -13,7 +23,9 @@ var blowUp = function (selector) {
   $(selector).toggle('explode', {pieces: 19}, 2000, function () {
     // Toggle like many jQuery functions accepts a callback...
     // So I can un-toggle the thing once my toggling of the thing is complete
-    $(selector).toggle('explode', {pieces: 7}, 1000);
+    $(selector).toggle('explode', {pieces: 7}, 1000,function(){
+      doSomeStuff();
+    });
   })
 };
 

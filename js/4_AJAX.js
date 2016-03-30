@@ -22,7 +22,7 @@ var appendGifs = function(response_data) {
   $('#ajax_image_container').remove();
   $('#ajax_land').append(img_container);
 
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 3; i++) {
     var image_element = buildImageElement(response_data.data[i].images.fixed_height_small.url);
     $('#ajax_image_container').append(image_element);
   }
@@ -43,11 +43,15 @@ var gifButtonListener = function(){
       url: baseUrl+search+apiKey
     })
 
+    // Cool we made out AJAX request and now it's done.
+    // in the .done function we will use the data we got back
+    // to update the DOM with new information/functionality.
     giphyRequest.done(function(response_data){
       appendGifs(response_data);
       console.log(response_data);
     })
 
+    // Always write a .fail, just good practice. Silent errors == non-happy campers
     giphyRequest.fail(function(response_data){
       console.log(response_data);
       console.log('Ohh nooo');

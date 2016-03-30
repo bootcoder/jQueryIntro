@@ -5,9 +5,9 @@
 
 
 $(document).ready(function () {
-  // js1();
-  // js2();
-  // js3();
+  js1();
+  js2();
+  js3();
   js4();
 });
 

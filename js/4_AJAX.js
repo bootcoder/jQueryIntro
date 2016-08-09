@@ -10,6 +10,18 @@ var appendGifSearch = function(){
   $('#ajax_land').append(formMarkup);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 // These are my helper methods, things that assist in getting the
 // job done while giving my code a cleaner more single responsibility feel.
 
@@ -28,13 +40,28 @@ var appendGifs = function(response_data) {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // This is the core AJAX function which consumes the helper functions
 var gifButtonListener = function(){
   $('#ajax_land').on('submit', '#gif_search_form', function(event){
 
     event.preventDefault();
+    var $that = $(this);
 
     var baseUrl = "http://api.giphy.com/v1/gifs/"
+    // This right here,,,, don't do this....
     var apiKey = "&api_key=dc6zaTOxFJmzC"
     var formInput = $('#gif_search_form input').val()
     var search = `search?q=${formInput}`
@@ -47,6 +74,9 @@ var gifButtonListener = function(){
     // in the .done function we will use the data we got back
     // to update the DOM with new information/functionality.
     giphyRequest.done(function(response_data){
+      console.log($that);
+      console.log(this);
+      debugger
       appendGifs(response_data);
       console.log(response_data);
     })

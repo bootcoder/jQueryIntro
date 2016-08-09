@@ -17,6 +17,7 @@ var basicSelection = function () {
 
   var $domKlass = $('.klass');
   console.log($domKlass);
+  // debugger
 
   // Consoling domKlass yields what appears to be an array of elements.
   // This is not an array it is a NodeList.
@@ -68,7 +69,6 @@ var chainingCalls = function () {
 
 
 
-
 var manipulateDivs = function () {
 
   // As a student, good to signal when you hit a function.
@@ -103,6 +103,7 @@ var iterationAndConditionals = function () {
   // Iterate over collections
   $('div').each(function(index, element){
     // console.log(index);
+    // console.log("arguments: ");
     // console.log(arguments);
     // console.log('*****')
     // console.log('element ' + element)

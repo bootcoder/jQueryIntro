@@ -116,10 +116,10 @@ var standardListener = function(){
 // ***   For Event Handlers    *** //
 /////////////////////////////////////
 
-var delegatedListener = function(event){
+var delegatedListener = function(){
 // Parent     Event  Target
 //   ↓↓       ↓↓↓↓↓    ↓↓
-  $('ul').on('click', 'li a', function(){
+  $('ul').on('click', 'li a', function(event){
     console.log(this);
     console.log(event);
   })

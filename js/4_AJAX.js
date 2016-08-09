@@ -76,7 +76,7 @@ var gifButtonListener = function(){
     giphyRequest.done(function(response_data){
       console.log($that);
       console.log(this);
-      debugger
+      // debugger
       appendGifs(response_data);
       console.log(response_data);
     })

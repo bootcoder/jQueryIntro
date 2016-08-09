@@ -12,6 +12,8 @@ $(document).ready(function () {
 });
 
 
+
+
 // js/1_getStarted.js
 var js1 = function(){
   basicSelection();
@@ -44,6 +46,9 @@ var js3 = function(){
   buttonListener();
   dynamicButtonListener();
 }
+
+
+
 
 var js4 = function(){
   appendGifSearch();

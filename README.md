@@ -100,44 +100,58 @@ _Pro Tip:_ Being good with jQuery selectors is 3/4 of the battle when writing AJ
 
 #### Sample Workflow in AJAX
 
-1. Use jQuery to grab specific attributes from DOM elements and set them to a variable within whatever function is handling the event.
-2. Construct the actual AJAX call, passing the variables above as arguments.
-3. _At this point we leave JS land and go back to Ruby land._
-4. Server side route should see that the request is from AJAX,
-5. Format data appropriately and return valid data.
-6. _Now leave the server and come back to JS land._
-7. Write a ```.done``` method to go along with your request. Use this to consume the response data you received and update the DOM accordingly. You should also write a ```.fail``` function always and forever. See the note below the code for a good reason.
+1. Use jQuery to set up an event listener for some user action in the DOM.
+2. Use jQuery to grab specific attributes from DOM elements and set them to a variable within whatever function is handling the event.
+3. Construct the actual AJAX call, passing the variables above as arguments.
+4. _At this point we leave JS land and go back to Ruby land._
+5. Server side route should see that the request is from AJAX,
+6. Format data appropriately and return valid data.
+7. _Now leave the server and come back to JS land._
+8. Write a ```.done``` method to go along with your request. Use this to consume the response data you received and update the DOM accordingly. You should also write a ```.fail``` function always and forever. See the note below the code for a good reason.
 
 ```js
 // STEP: 1
-var url_variable = $('#thing').attr('href');
-var action_variable = $('#thing').attr('action');
-var data_variable = $('#thing').serialize();
+var thingListener = funciton () {
+  $('.someClassWithThatThing').on('click', function (event) {
+    event.preventDefault();
+    console.log('inThingListener');
 
 // STEP: 2
-var request = $.ajax({
-  url: url_variable,
-  type: action_variable,
-  data: data_variable
-})
+    var url_variable = $('#thing').attr('href');
+    var action_variable = $('#thing').attr('action');
+    var data_variable = $('#thing').serialize();
 
-// STEP: 6
-request.done(function(response_data){
-  console.log(response_data);
-  $('#thing2').append(response_data);
-})
+// STEP: 3
+    var request = $.ajax({
+      url: url_variable,
+      type: action_variable,
+      data: data_variable
+    })
 
-request.fail(function(response_data){
-  console.log(response_data);
-  console.log("Ohhhh Noooo");
-})
+// STEP: 4 Request Sent: Head off to Ruby Land!
+
+// STEP: 7 Response Received: Back from Ruby Land!
+
+// STEP: 8
+    request.done(function(response_data){
+      console.log(response_data);
+      $('#thing2').append(response_data);
+    })
+
+    request.fail(function(response_data){
+      console.log(response_data);
+      console.log("Ohhhh Noooo");
+    })
+
+  })
+}
 ```
 
 ```ruby
 get '/dogs/new' do
-  # STEP: 4
+  # STEP: 5
   if request.xhr?
-    # STEP: 5
+    # STEP: 6
     erb: :'dogs/new', layout: false
   else
     erb :'dogs/new'
@@ -147,9 +161,9 @@ end
 post '/dogs' do
   @dog = Dog.new(params[:dog])
   if @dog.save
-    # STEP: 4
+    # STEP: 5
     if request.xhr?
-      # STEP: 5
+      # STEP: 6
       @dog.to_json
     else
       redirect '/dogs'

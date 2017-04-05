@@ -117,6 +117,8 @@ var thingListener = funciton () {
     console.log('inThingListener');
 
 // STEP: 2
+    // I would usually name something like thingTarget, but that's me
+    var $currentContext = $(this);
     var url_variable = $('#thing').attr('href');
     var action_variable = $('#thing').attr('action');
     var data_variable = $('#thing').serialize();

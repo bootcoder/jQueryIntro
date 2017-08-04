@@ -1,5 +1,8 @@
 # jQuery intro notes:
 
+#### Before you start:
+Be sure you have a solid understanding of [this](https://zellwk.com/blog/this/).
+
 ### General Notes
 
 ---

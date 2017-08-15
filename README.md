@@ -72,7 +72,7 @@ Get REALLY comfortable with CSS selectors. They are the heart of the library and
 ---
 
 ### Sample Code
-Have a solid look through the code included in this repo. It gives a 1000ft overview of basic jQuery functionality. Open up the index.html and toggle functions in ```0_main.js``` to see their effects.
+Have a solid look through the code included in this repo. It gives a 1000ft overview of basic jQuery functionality. Open up the ```index.html``` and toggle functions in ```0_main.js``` to see their effects.
 
 ---
 
@@ -215,7 +215,7 @@ What's the first 2 rules of debugging?!? __READ THE ERROR MESSAGE__. Where do we
 
 ---
 
-## More Nice Links:
+### More Nice Links:
 
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 

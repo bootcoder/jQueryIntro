@@ -196,11 +196,13 @@ In the ```GET``` route above we are sending a partial back to AJAX. In the ```PO
 ### ProTip:
 Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **_actually_** loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)
 
-__From this point forward your Chrome Dev Tools should never be closed.__
+### Final Thought
 
+*Chrome Dev Tools* __From this point forward they should never be closed when you are developing.__
+
+What's the first 2 rules of debugging?!? __READ THE ERROR MESSAGE__. Where do we find JS error messages...? In the Dev Tools Console!
 
 ## More Nice Links:
-
 
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 

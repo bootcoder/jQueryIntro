@@ -1,6 +1,7 @@
 # jQuery intro notes:
 
 #### Before you start:
+
 Be sure you have a solid understanding of [this](https://zellwk.com/blog/this/).
 
 ### General Notes
@@ -71,7 +72,9 @@ Get REALLY comfortable with CSS selectors. They are the heart of the library and
 ---
 
 ### Sample Code
-Have a solid look through the code included in this repo. It gives a 1000ft overview of basic jQuery functionality.
+Have a solid look through the code included in this repo. It gives a 1000ft overview of basic jQuery functionality. Open up the index.html and toggle functions in ```0_main.js``` to see their effects.
+
+---
 
 ### Event Delegation
 Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.
@@ -93,6 +96,8 @@ var delegatedEventListener = function(){
 
 **Translation** - Make this your DEFAULT pattern. Using this pattern for building event listeners allows you on listen to DOM elements which will be dynamically placed on the page after the initial load.
 
+---
+
 ### The DOM:
 
 DOM === Document Object Model
@@ -106,6 +111,8 @@ jQuery DOM features include:
   - Effects and animations
   - AJAX
   - Various utilities
+
+---
 
 ### AJAX:
 
@@ -193,14 +200,20 @@ end
 
 In the ```GET``` route above we are sending a partial back to AJAX. In the ```POST``` route we are sending back the @dog object as JSON. Same rules as always applies here. _Be VERY aware of what_ your methods are returning. If you are expecting a partial and get JSON your AJAX will fail. :-(
 
+---
+
 ### ProTip:
 Chrome defines ```$()``` as well. This is not jQuery. Always be sure you have **_actually_** loaded jQuery into your project. If you can select an element with $ but cannot run various jQuery methods on it this is most likely the culprit (Laugh now... Its happened to better Devs than you friend ;-)
+
+---
 
 ### Final Thought
 
 *Chrome Dev Tools* __From this point forward they should never be closed when you are developing.__
 
 What's the first 2 rules of debugging?!? __READ THE ERROR MESSAGE__. Where do we find JS error messages...? In the Dev Tools Console!
+
+---
 
 ## More Nice Links:
 

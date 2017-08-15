@@ -40,6 +40,20 @@ It allows you to quickly move from basic selection to crazy advanced DOM manipul
 
 ---
 
+#### I want to be awesome too!
+
+_What can you do to level up your jQuery quickly?_
+
+Get REALLY comfortable with CSS selectors. They are the heart of the library and will greatly increase your ability to traverse the DOM easily. After that treat this just as you would any other DSL. Dive in, look at the docs or another great resource (see cheat sheet below) and start playing with individual functions to broaden your horizons. Find something ultra cool... Share it with a peer!
+
+[30 Great CSS Selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+[jQuery Selectors](http://www.w3schools.com/jquery/jquery_selectors.asp)
+
+[THE jQuery CheatSheet](http://oscarotero.com/jquery/)
+
+---
+
 #### Basic functions:
   - ```$()``` -- This is the jQuery selector
   - ```$(document).ready()``` -- Get your scripts ready to run.
@@ -187,7 +201,6 @@ __From this point forward your Chrome Dev Tools should never be closed.__
 
 ## More Nice Links:
 
-[THE jQuery CheatSheet](http://oscarotero.com/jquery/)
 
 [Great jQUery tutorial](http://learn.shayhowe.com/advanced-html-css/jquery/)
 
@@ -203,8 +216,5 @@ __From this point forward your Chrome Dev Tools should never be closed.__
 
 [jsfiddle - jquery show and tell with your friends](http://jsfiddle.net)
 
-[30 Great CSS Selectors](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
-
 [Another jQuery Cheatsheet (PDF)](http://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf)
 
-[jQuery Selectors](http://www.w3schools.com/jquery/jquery_selectors.asp)

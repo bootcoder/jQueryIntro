@@ -3,7 +3,6 @@ var addListItems = function () {
 
   // Look down to sub-elements
   var list = $('.awesome_list');
-
   var listItem = $('.awesome_list li:first-child');
   // Append or remove elements
   for (var i = 0; i < 5; i += 1) {

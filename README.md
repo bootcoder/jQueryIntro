@@ -135,7 +135,7 @@ _Pro Tip:_ Being good with jQuery selectors is 3/4 of the battle when writing AJ
 
 ```js
 // STEP: 1
-var thingListener = funciton () {
+var thingListener = function () {
   $('.someClassWithThatThing').on('click', function (event) {
     event.preventDefault();
     console.log('inThingListener');

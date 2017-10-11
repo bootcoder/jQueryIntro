@@ -161,7 +161,9 @@ var thingListener = function () {
 // STEP: 8
     request.done(function(response_data){
       console.log(response_data);
-      $('#thing2').append(response_data);
+      $($currentContext).parent().append(response_data);
+      // Or whatever you need to get where you're going from where you are.
+      // We assigned $currentContext in the function above so that we could still have access to it here. Thus providing a proper starting point for our DOM traversal.
     })
 
     request.fail(function(response_data){
